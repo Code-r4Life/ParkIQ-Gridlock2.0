@@ -1,54 +1,31 @@
-# ParkIQ – Urban Mobility Platform
+## Current Repository Status
 
-AI-powered parking intelligence platform for identifying illegal parking hotspots, detecting abnormal violation spikes, and supporting data-driven enforcement.
-
-## ML-3 Scope Completed
-
-### Database & Spatial Layer
-
-* PostgreSQL setup
-* PostGIS integration
-* Spatial indexing using GiST
+Currently integrated:
 
 ### Data Engineering
+- Data cleaning
+- Feature engineering
+- Daily aggregation
 
-* Dataset profiling and cleaning
-* Feature engineering
-* Daily violation aggregation
+### Geospatial Analytics
+- PostgreSQL
+- PostGIS
+- Spatial indexing
 
-### Anomaly Detection
+### Machine Learning
+- Isolation Forest anomaly detection
+- Alert generation
+- Hotspot ranking
+- Heatmap-ready datasets
 
-* Isolation Forest model
-* 620 anomalous location-day combinations detected
+Generated outputs:
+- daily_counts.csv
+- anomalies.csv
+- anomalies_enriched.csv
+- anomaly_alerts.csv
+- hotspots.csv
+- hotspot_details.csv
+- heatmap_data.csv
+- hotspots_geojson.zip
 
-### Alert Generation
-
-* Severity classification
-* Alert identifiers
-* Human-readable alert messages
-
-## Generated Outputs
-
-| File                   | Purpose                     |
-| ---------------------- | --------------------------- |
-| daily_counts.csv       | Daily violation aggregation |
-| anomalies_enriched.csv | Isolation Forest output     |
-| anomaly_alerts.csv     | Alert dataset for APIs      |
-
-## Technologies
-
-* Python
-* Pandas
-* Scikit-learn
-* PostgreSQL
-* PostGIS
-
-## Current Progress
-
-* Database Setup ✅
-* Data Pipeline ✅
-* Spatial Analytics ✅
-* Anomaly Detection ✅
-* Alert Generation ✅
-* Hotspot Detection 🔄
-* Redis Optimization ⏳
+Additional project modules will be integrated as development progresses.
