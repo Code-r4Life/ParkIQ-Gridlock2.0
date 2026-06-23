@@ -1,4 +1,6 @@
-const BASE = "http://localhost:8000";
+const BASE =
+  import.meta.env.VITE_API_URL ||
+  "http://localhost:8000";
 
 export const api = {
   overview:        () => fetch(`${BASE}/stats/overview`).then(r => r.json()),
